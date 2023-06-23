@@ -5,7 +5,7 @@ jobs:
   build:
     name: Generates a universal Flipper Binary.
     runs-on: macos-latest
-
+    permissions: write-all
     steps:
       - name: Checkout
         uses: actions/checkout@v3
