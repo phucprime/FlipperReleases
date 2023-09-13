@@ -28,7 +28,7 @@ jobs:
           body: |
             Universal binary for Flipper version: ${{ env.flipper_version }}
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
